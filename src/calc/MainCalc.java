@@ -9,25 +9,25 @@ import java.util.StringTokenizer;
 public class MainCalc {
 
 	public static void main(String[] args) {
-		BufferedReader d = new BufferedReader(new InputStreamReader(System.in));
-		String sIn;
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+		String stringIn;
 
 		try {
 			System.out.println("Enter digit operation [+,-,*,/] and other digit");
-			sIn = d.readLine();
-			sIn = opn(sIn);
-			System.out.println(calculate(sIn));
+			stringIn = bufferedReader.readLine();
+			stringIn = opn(stringIn);
+			System.out.println(calculate(stringIn));
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
 	}
 
-	private static String opn(String sIn) throws Exception {
+	private static String opn(String stringIn) throws Exception {
 		StringBuilder sbStack = new StringBuilder(""), sbOut = new StringBuilder("");
 		char cIn, cTmp;
 
-		for (int i = 0; i < sIn.length(); i++) {
-			cIn = sIn.charAt(i);
+		for (int i = 0; i < stringIn.length(); i++) {
+			cIn = stringIn.charAt(i);
 			if (isOp(cIn)) {
 				while (sbStack.length() > 0) {
 					cTmp = sbStack.substring(sbStack.length() - 1).charAt(0);
