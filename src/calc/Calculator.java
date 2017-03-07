@@ -2,9 +2,6 @@ package calc;
 
 public class Calculator {
 
-	private double one;
-	private double two;
-
 	public static void calculateSin(double a) {
 		// Convert degrees to radian
 		a = Math.toRadians(a);
