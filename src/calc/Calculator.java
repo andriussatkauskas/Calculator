@@ -69,7 +69,7 @@ public class Calculator implements ActionListener {
 		b0.setBounds(110, 340, 50, 40);
 		beq.setBounds(180, 340, 50, 40);
 		badd.setBounds(250, 340, 50, 40);
-		bctg.setBounds(320, 340, 70, 40);
+		bctg.setBounds(320, 340, 70, 45);
 
 		bdel.setBounds(40, 410, 100, 40);
 		bclr.setBounds(160, 410, 100, 40);
