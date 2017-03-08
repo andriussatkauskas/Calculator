@@ -6,6 +6,7 @@ import java.awt.event.*;
 public class Calculator implements ActionListener{
 	JFrame f;
     JTextField t;
+    JTextField tHistory;
     JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,bdiv,bmul,bsub,badd,bdec,beq,bdel,bclr,bsin,bcos,btg,bctg, bsqeq;
  
     static double a=0,b=0,result=0;
@@ -15,6 +16,7 @@ public class Calculator implements ActionListener{
     {
         f=new JFrame("Calculator");
         t=new JTextField();
+        tHistory=new JTextField();
         b1=new JButton("1");
         b2=new JButton("2");
         b3=new JButton("3");
@@ -39,36 +41,38 @@ public class Calculator implements ActionListener{
         bctg=new JButton("ctg");
         bsqeq=new JButton("square equation");
         
-        t.setBounds(30,40,280,30);
-        b7.setBounds(40,100,50,40);
-        b8.setBounds(110,100,50,40);
-        b9.setBounds(180,100,50,40);
-        bdiv.setBounds(250,100,50,40);
-        bsin.setBounds(320, 100, 70, 40);
+        tHistory.setBounds(30,40,280,30);
+        t.setBounds(30,70,280,30);
+        b7.setBounds(40,130,50,40);
+        b8.setBounds(110,130,50,40);
+        b9.setBounds(180,130,50,40);
+        bdiv.setBounds(250,130,50,40);
+        bsin.setBounds(320, 130, 70, 40);
         
-        b4.setBounds(40,170,50,40);
-        b5.setBounds(110,170,50,40);
-        b6.setBounds(180,170,50,40);
-        bmul.setBounds(250,170,50,40);
-        bcos.setBounds(320, 170, 70, 40);
+        b4.setBounds(40,200,50,40);
+        b5.setBounds(110,200,50,40);
+        b6.setBounds(180,200,50,40);
+        bmul.setBounds(250,200,50,40);
+        bcos.setBounds(320, 200, 70, 40);
         
-        b1.setBounds(40,240,50,40);
-        b2.setBounds(110,240,50,40);
-        b3.setBounds(180,240,50,40);
-        bsub.setBounds(250,240,50,40);
-        btg.setBounds(320, 240, 70, 40);
+        b1.setBounds(40,270,50,40);
+        b2.setBounds(110,270,50,40);
+        b3.setBounds(180,270,50,40);
+        bsub.setBounds(250,270,50,40);
+        btg.setBounds(320, 270, 70, 40);
         
-        bdec.setBounds(40,310,50,40);
-        b0.setBounds(110,310,50,40);
-        beq.setBounds(180,310,50,40);
-        badd.setBounds(250,310,50,40);
-        bctg.setBounds(320, 310, 70, 40);
+        bdec.setBounds(40,340,50,40);
+        b0.setBounds(110,340,50,40);
+        beq.setBounds(180,340,50,40);
+        badd.setBounds(250,340,50,40);
+        bctg.setBounds(320, 340, 70, 40);
         
         
-        bdel.setBounds(40,380,100,40);
-        bclr.setBounds(160,380,100,40);
-        bsqeq.setBounds(280, 380, 100, 40);
+        bdel.setBounds(40,410,100,40);
+        bclr.setBounds(160,410,100,40);
+        bsqeq.setBounds(280, 410, 100, 40);
         
+        f.add(tHistory);
         f.add(t);
         f.add(b7);
         f.add(b8);
@@ -96,7 +100,7 @@ public class Calculator implements ActionListener{
         
         f.setLayout(null);
         f.setVisible(true);
-        f.setSize(420,500);
+        f.setSize(420,530);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setResizable(false);
         
