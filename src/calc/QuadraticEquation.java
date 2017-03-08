@@ -18,7 +18,7 @@ public class QuadraticEquation {
 		if (dis > 0){
 			double x1 =(-b + Math.sqrt(dis)) / 2*a;
 			double x2 =(b - Math.sqrt(dis)) / 2*a;
-			System.out.printf("Iksas vienas = %d\n Iksas du = %d\n", x1, x2);
+			System.out.printf("Iksas pirmas = %d\n Iksas antras = %d\n", x1, x2);
 		}else {
 			double x = -(b)/2*a;
 			System.out.println("Atsakymas = " +x);
