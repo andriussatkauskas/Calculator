@@ -6,7 +6,7 @@ import java.awt.event.*;
 public class Calculator implements ActionListener{
 	JFrame f;
     JTextField t;
-    JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,bdiv,bmul,bsub,badd,bdec,beq,bdel,bclr,bsin,bcos,btg,bctg;
+    JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,bdiv,bmul,bsub,badd,bdec,beq,bdel,bclr,bsin,bcos,btg,bctg, bsqeq;
  
     static double a=0,b=0,result=0;
     static int operator=0;
@@ -37,6 +37,7 @@ public class Calculator implements ActionListener{
         bcos=new JButton("cos");
         btg=new JButton("tg");
         bctg=new JButton("ctg");
+        bsqeq=new JButton("square equation");
         
         t.setBounds(30,40,280,30);
         b7.setBounds(40,100,50,40);
@@ -64,8 +65,9 @@ public class Calculator implements ActionListener{
         bctg.setBounds(320, 310, 70, 40);
         
         
-        bdel.setBounds(60,380,100,40);
-        bclr.setBounds(180,380,100,40);
+        bdel.setBounds(40,380,100,40);
+        bclr.setBounds(160,380,100,40);
+        bsqeq.setBounds(280, 380, 100, 40);
         
         f.add(t);
         f.add(b7);
@@ -90,6 +92,7 @@ public class Calculator implements ActionListener{
         f.add(bcos);
         f.add(btg);
         f.add(bctg);
+        f.add(bsqeq);
         
         f.setLayout(null);
         f.setVisible(true);
@@ -119,6 +122,7 @@ public class Calculator implements ActionListener{
         bcos.addActionListener(this);
         btg.addActionListener(this);
         bctg.addActionListener(this);
+        bsqeq.addActionListener(this);
         
     }
  
