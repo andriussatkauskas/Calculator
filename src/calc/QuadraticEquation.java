@@ -21,7 +21,7 @@ public class QuadraticEquation {
 			System.out.printf("Iksas vienas = %d\n Iksas du = %d\n", x1, x2);
 		}else {
 			double x = -(b)/2*a;
-			System.out.println("Ats = " +x);
+			System.out.println("Atsakymas = " +x);
 		}
 		
 	}
