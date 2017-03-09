@@ -17,6 +17,8 @@ public class Calculator implements ActionListener {
 	static double a = 0, b = 0, result = 0;
 	static int operator = 0;
 
+
+
 	Calculator() {
 		f = new JFrame("Calculator");
 		t = new JTextField();
@@ -132,7 +134,7 @@ public class Calculator implements ActionListener {
 		bsqeq.addActionListener(this);
 
 	}
-
+// button action
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == b1)
 			t.setText(t.getText().concat("1"));
